@@ -1,9 +1,46 @@
-# Tệp sinh ra khi biên dịch
+# Tệp và thư mục sinh ra khi biên dịch C/C++
 build/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
 *.o
 *.obj
+*.d
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.gch
+*.pch
 *.exe
 *.out
+*.pdb
+*.idb
+*.ipdb
+*.iobj
+*.ilk
+*.exp
+*.tlog
+*.lastbuildstate
+
+# Tệp sinh ra bởi công cụ debug, profiling và coverage
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+core
+core.*
+*.stackdump
 
 # Dữ liệu lớn và tệp tạm của thuật toán
 *.bin
@@ -11,7 +48,26 @@ build/
 *.tmp
 run_*
 
+# Thiết lập cá nhân của IDE
+.vs/
+.idea/
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+
 # Tệp tạm của trình soạn thảo và hệ điều hành
 ~$*.docx
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
+
+# Gói nén nộp bài được tạo cục bộ, không lưu trùng trong Git
+*.zip
+*.rar

@@ -4,12 +4,12 @@
 
 ## Điều hướng nhanh
 
-| Tôi là | Bắt đầu tại | Sản phẩm chính |
-| --- | --- | --- |
-| Quân | [Workspace của Quân](./Quan/README.md) | Lý thuyết, verifier, benchmark, báo cáo |
-| Huy | [Workspace của Huy](./Huy/README.md) | Merge Sort nội không đệ quy |
-| Thiện | [Workspace của Thiện](./Thien/README.md) | Chương trình sinh dữ liệu nhị phân |
-| Khoa | [Workspace của Khoa](./Khoa/README.md) | Merge Sort ngoại và tích hợp |
+| Tôi là | Bắt đầu tại                           | Sản phẩm chính                           |
+| -------- | ----------------------------------------- | ------------------------------------------- |
+| Quân    | [Workspace của Quân](./Quan/README.md)   | Lý thuyết, verifier, benchmark, báo cáo |
+| Huy      | [Workspace của Huy](./Huy/README.md)      | Merge Sort nội không đệ quy             |
+| Thiện   | [Workspace của Thiện](./Thien/README.md) | Chương trình sinh dữ liệu nhị phân   |
+| Khoa     | [Workspace của Khoa](./Khoa/README.md)    | Merge Sort ngoại và tích hợp            |
 
 Trước khi viết phần giao tiếp giữa các chương trình, đọc [Quy ước tích hợp](./ma_nguon_chung/QUY_UOC_TICH_HOP.md).
 
@@ -39,21 +39,21 @@ Quy cách đặt tên tệp nén của nhóm: `Nhom06_BT03_MergeSort.RAR` hoặc
 
 ## Thành viên nhóm 6
 
-| STT | Mã số sinh viên | Họ và tên |
-| ---: | :----------------: | --- |
-| 1 | 25133057 | Nguyễn Hoàng Quân |
-| 2 | 24162040 | Châu Kim Huy |
-| 3 | 24126216 | Nguyễn Ngọc Thiện |
-| 4 | 24149170 | Phạm Đức Khoa |
+| STT | Mã số sinh viên | Họ và tên         |
+| --: | :----------------: | -------------------- |
+|   1 |      25133057      | Nguyễn Hoàng Quân |
+|   2 |      24162040      | Châu Kim Huy        |
+|   3 |      24126216      | Nguyễn Ngọc Thiện |
+|   4 |      24149170      | Phạm Đức Khoa     |
 
 ## Bảng phân công
 
-| STT | Mã số sinh viên | Họ và tên | Nội dung phụ trách | Trạng thái |
-| ---: | :----------------: | --- | --- | --- |
-| 1 | 25133057 | Nguyễn Hoàng Quân | Trình bày sắp xếp ngoại; viết công cụ kiểm tra tệp đã sắp xếp; phụ trách kiểm thử tích hợp, benchmark, báo cáo và gói nộp | Chưa bắt đầu |
-| 2 | 24162040 | Châu Kim Huy | Xây dựng ý tưởng, mã giả và cài đặt Merge Sort nội không đệ quy theo `run-length` | Chưa bắt đầu |
-| 3 | 24126216 | Nguyễn Ngọc Thiện | Viết chương trình sinh tệp nhị phân gồm 30–50 triệu giá trị `long double` | Chưa bắt đầu |
-| 4 | 24149170 | Phạm Đức Khoa | Cài đặt Merge Sort ngoại, quản lý các run, tệp tạm và đo thời gian thực thi | Chưa bắt đầu |
+| STT | Mã số sinh viên | Họ và tên         | Nội dung phụ trách                                                                                                                              | Trạng thái     |
+| --: | :----------------: | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+|   1 |      25133057      | Nguyễn Hoàng Quân | Trình bày sắp xếp ngoại; viết công cụ kiểm tra tệp đã sắp xếp; phụ trách kiểm thử tích hợp, benchmark, báo cáo và gói nộp | Chưa bắt đầu |
+|   2 |      24162040      | Châu Kim Huy        | Xây dựng ý tưởng, mã giả và cài đặt Merge Sort nội không đệ quy theo `run-length`                                                 | Chưa bắt đầu |
+|   3 |      24126216      | Nguyễn Ngọc Thiện | Viết chương trình sinh tệp nhị phân gồm 30–50 triệu giá trị `long double`                                                            | Chưa bắt đầu |
+|   4 |      24149170      | Phạm Đức Khoa     | Cài đặt Merge Sort ngoại, quản lý các run, tệp tạm và đo thời gian thực thi                                                           | Chưa bắt đầu |
 
 ### Phối hợp và kiểm thử chéo
 
@@ -104,6 +104,18 @@ Quy cách đặt tên tệp nén của nhóm: `Nhom06_BT03_MergeSort.RAR` hoặc
 3. Mã nguồn chỉ được chuyển vào `ma_nguon_chung/` sau khi đã kiểm thử và được thành viên liên quan thống nhất.
 4. Tài liệu, mã nguồn và kết quả trong thư mục dùng chung phải ghi rõ người phụ trách và người đóng góp trong README của thư mục.
 5. Không commit tệp nhị phân dung lượng lớn, tệp biên dịch hoặc các run tạm lên Git.
+6. Không dùng `git add -f` để bỏ qua `.gitignore` nếu chưa trao đổi với nhóm.
+7. Gói `.zip`/`.rar` cuối cùng được tạo cục bộ để nộp, không lưu trùng trong Git.
+
+### Quy tắc commit tệp
+
+| Nên commit                                                            | Không commit                                                     |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Mã nguồn `.cpp`, `.h`, `.hpp`                                  | Tệp biên dịch `.o`, `.obj`, `.exe`, `.out`             |
+| `Makefile`, `CMakeLists.txt` và cấu hình build dùng chung      | Thư mục `build/`, cache CMake và thư viện đã biên dịch |
+| README, tài liệu, file Word chính thức                             | Thiết lập IDE cá nhân, file tạm của Word/hệ điều hành   |
+| Kết quả nhỏ dạng `.md`, `.txt`, `.csv` dùng trong báo cáo | Dữ liệu `.bin`, `.dat`, run tạm và core dump              |
+| Cấu hình IDE thực sự dùng chung như VS Code `tasks.json`       | Gói nén `.zip`, `.rar` được tạo lại từ nội dung repo |
 
 ## Kế hoạch thực hiện
 
