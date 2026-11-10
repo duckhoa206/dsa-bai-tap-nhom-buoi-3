@@ -2,6 +2,28 @@
 
 Mỗi thành viên tự cập nhật dòng do mình phụ trách. Trạng thái dùng thống nhất: **Chưa bắt đầu**, **Đang làm**, **Chờ duyệt**, **Cần sửa**, **Hoàn thành**.
 
+## Giải thích trạng thái
+
+| Trạng thái | Ý nghĩa | Ai cập nhật? |
+| --- | --- | --- |
+| **Chưa bắt đầu** | Hạng mục chưa được thực hiện. | Người phụ trách hạng mục |
+| **Đang làm** | Đã bắt đầu viết code, tài liệu hoặc kiểm thử nhưng chưa sẵn sàng bàn giao. | Người phụ trách hạng mục |
+| **Chờ duyệt** | Người phụ trách đã hoàn thành và tự kiểm thử; sản phẩm đang chờ người ở cột **Người duyệt/nhận** kiểm tra. | Người phụ trách sau khi bàn giao |
+| **Cần sửa** | Người duyệt đã phát hiện lỗi hoặc nội dung chưa đạt; sản phẩm phải được sửa trong workspace cá nhân. | Người duyệt, kèm mô tả nội dung cần sửa |
+| **Hoàn thành** | Sản phẩm đã đạt yêu cầu, được duyệt và chuyển đến đúng thư mục chung ghi trong cột **Đích đến**. | Người duyệt sau khi kiểm tra lần cuối |
+
+## Luồng chuyển trạng thái
+
+```text
+Chưa bắt đầu → Đang làm → Chờ duyệt → Hoàn thành
+                              ↓
+                           Cần sửa
+                              ↓
+                           Đang làm → Chờ duyệt
+```
+
+Chỉ đánh dấu **Hoàn thành** khi sản phẩm đã được kiểm tra chéo và xuất hiện ở đúng đường dẫn trong cột **Đích đến**.
+
 | Hạng mục | Phụ trách | Đường dẫn đang làm | Người duyệt/nhận | Đích đến | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
 | Quy ước dữ liệu và CLI | Thiện + Khoa | [`ma_nguon_chung/QUY_UOC_TICH_HOP.md`](./ma_nguon_chung/QUY_UOC_TICH_HOP.md) | Huy + Quân | Chính tệp này | Chờ duyệt |
