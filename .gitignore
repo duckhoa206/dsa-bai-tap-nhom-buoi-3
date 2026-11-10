@@ -1,0 +1,17 @@
+# Tệp sinh ra khi biên dịch
+build/
+*.o
+*.obj
+*.exe
+*.out
+
+# Dữ liệu lớn và tệp tạm của thuật toán
+*.bin
+*.dat
+*.tmp
+run_*
+
+# Tệp tạm của trình soạn thảo và hệ điều hành
+~$*.docx
+.DS_Store
+Thumbs.db
